@@ -1,0 +1,333 @@
+/* NIAZI HOSTEL - ADMISSION RECEIPT */
+
+.application-success-section {
+    padding: 70px 0;
+    background: #f7f9fc;
+}
+
+.application-success-section .container {
+    max-width: 1000px;
+}
+
+.application-success-box {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e7ebf0;
+    border-radius: 24px;
+    padding: 42px 30px;
+    box-shadow: 0 20px 55px rgba(20, 29, 42, 0.08);
+    margin-bottom: 28px;
+}
+
+.success-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(249, 112, 102, 0.12);
+    color: #f97066;
+    font-size: 30px;
+}
+
+.success-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    color: #f97066;
+    margin-bottom: 12px;
+}
+
+.application-success-box h2 {
+    color: #141d2a;
+    margin: 0 0 12px;
+}
+
+.success-message {
+    max-width: 620px;
+    margin: 0 auto 22px;
+    color: #667085;
+    line-height: 1.7;
+}
+
+.application-id {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #f6f8fb;
+    border: 1px solid #e6eaf0;
+}
+
+.application-id span {
+    color: #667085;
+    font-size: 13px;
+}
+
+.application-id strong {
+    color: #141d2a;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+}
+
+.application-actions {
+    margin-top: 24px;
+}
+
+.print-application-btn {
+    border: none;
+    border-radius: 12px;
+    padding: 14px 22px;
+    background: #141d2a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    transition: 0.25s ease;
+}
+
+.print-application-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(20, 29, 42, 0.18);
+}
+
+.application-receipt {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #e5e9ef;
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(20, 29, 42, 0.08);
+}
+
+.receipt-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 32px;
+    background: #141d2a;
+    color: #ffffff;
+}
+
+.receipt-brand {
+    display: block;
+    color: #f97066;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.receipt-header h2 {
+    margin: 0 0 7px;
+    font-size: 26px;
+}
+
+.receipt-header p {
+    margin: 0;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.receipt-status {
+    min-width: 150px;
+    align-self: center;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+}
+
+.receipt-status span {
+    display: block;
+    font-size: 11px;
+    opacity: 0.65;
+    margin-bottom: 4px;
+}
+
+.receipt-status strong {
+    color: #f97066;
+    font-size: 14px;
+}
+
+.receipt-id-row {
+    margin: 26px 32px 0;
+    padding: 16px 18px;
+    border: 1px dashed #f97066;
+    border-radius: 14px;
+    background: rgba(249, 112, 102, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.receipt-id-row span {
+    color: #667085;
+    font-size: 13px;
+}
+
+.receipt-id-row strong {
+    color: #141d2a;
+    font-size: 17px;
+}
+
+.receipt-section {
+    padding: 28px 32px 0;
+}
+
+.receipt-section h3 {
+    margin: 0 0 16px;
+    color: #141d2a;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.receipt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.receipt-item {
+    padding: 15px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #edf0f4;
+}
+
+.receipt-item-full {
+    grid-column: 1 / -1;
+}
+
+.receipt-item span {
+    display: block;
+    font-size: 11px;
+    color: #8a94a6;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+}
+
+.receipt-item strong {
+    display: block;
+    color: #273142;
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.receipt-footer {
+    margin-top: 28px;
+    padding: 22px 32px 28px;
+    border-top: 1px solid #edf0f4;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: end;
+}
+
+.receipt-footer p {
+    margin: 0;
+    color: #7b8494;
+    font-size: 12px;
+    line-height: 1.65;
+    max-width: 620px;
+}
+
+.receipt-footer div {
+    text-align: right;
+}
+
+.receipt-footer strong,
+.receipt-footer span {
+    display: block;
+}
+
+.receipt-footer strong {
+    color: #141d2a;
+}
+
+.receipt-footer span {
+    color: #8a94a6;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+@media (max-width: 700px) {
+
+    .receipt-header,
+    .receipt-footer {
+        flex-direction: column;
+    }
+
+    .receipt-status {
+        align-self: stretch;
+    }
+
+    .receipt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .receipt-item-full {
+        grid-column: auto;
+    }
+
+    .receipt-id-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .receipt-footer div {
+        text-align: left;
+    }
+}
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    body * {
+        visibility: hidden !important;
+    }
+
+    #applicationReceipt,
+    #applicationReceipt * {
+        visibility: visible !important;
+    }
+
+    #applicationReceipt {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .receipt-header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .receipt-section {
+        break-inside: avoid;
+    }
+
+    .application-success-box,
+    header,
+    footer {
+        display: none !important;
+    }
+}

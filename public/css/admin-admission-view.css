@@ -1,0 +1,994 @@
+/* =========================================
+   ADMISSION VIEW PAGE
+========================================= */
+
+.admission-view-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.admission-view-topbar > div {
+    position: relative;
+    padding-left: 18px;
+}
+
+.admission-view-topbar > div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 4px;
+    height: 72px;
+    border-radius: 20px;
+    background: #f97066;
+}
+
+.page-label {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: #f97066;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.admission-view-topbar h1 {
+    margin: 0;
+    color: #0f1f33;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.admission-view-topbar p {
+    margin-top: 8px;
+    color: #748094;
+    font-size: 14px;
+}
+
+.admission-view-topbar p strong {
+    color: #0f1f33;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border: 1px solid #e2e7ee;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #34445a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .25s ease;
+}
+
+.back-btn:hover {
+    border-color: #f97066;
+    color: #f97066;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   STUDENT SUMMARY
+========================================= */
+
+.status-summary-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    background: linear-gradient(135deg, #ffffff, #fff8f7);
+
+    border: 1px solid #edf0f4;
+    border-radius: 20px;
+
+    padding: 22px 24px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0 10px 30px rgba(15, 31, 51, .06);
+}
+
+.status-summary-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.student-large-avatar {
+    width: 62px;
+    height: 62px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #f97066, #e85d54);
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    box-shadow: 0 10px 22px rgba(249, 112, 102, .25);
+}
+
+.status-summary-left h2 {
+    margin: 0 0 5px;
+    color: #0f1f33;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.status-summary-left p {
+    margin: 0;
+    color: #7a8494;
+    font-size: 14px;
+}
+
+
+/* STATUS */
+
+.detail-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 14px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.status-pending {
+    background: #fff4da;
+    color: #a96d00;
+}
+
+.status-approved {
+    background: #e9f8ef;
+    color: #168a4b;
+}
+
+.status-rejected {
+    background: #fff0ef;
+    color: #c54242;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.admission-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* =========================================
+   DETAIL CARDS
+========================================= */
+
+.detail-card {
+    background: #ffffff;
+
+    border: 1px solid #e9edf2;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow: 0 8px 25px rgba(15, 31, 51, .045);
+
+    transition: .25s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 35px rgba(15, 31, 51, .08);
+}
+
+.full-width-card {
+    grid-column: 1 / -1;
+}
+
+
+/* CARD TITLE */
+
+.detail-card-title {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.detail-card-title i {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #fff2f1;
+
+    color: #f97066;
+
+    font-size: 14px;
+}
+
+.detail-card-title h3 {
+    margin: 0;
+    color: #16263c;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   DATA ROWS
+========================================= */
+
+.detail-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.detail-item {
+    background: #f8fafc;
+
+    border: 1px solid #edf1f5;
+
+    border-radius: 13px;
+
+    padding: 14px 15px;
+
+    min-height: 74px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: .2s ease;
+}
+
+.detail-item:hover {
+    background: #fff9f8;
+    border-color: #ffd8d5;
+}
+
+.detail-item-full {
+    grid-column: 1 / -1;
+}
+
+.detail-item span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #8a94a4;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+
+.detail-item strong {
+    color: #16263c;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.45;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   NOTES
+========================================= */
+
+.notes-box {
+    background: #f8fafc;
+
+    border: 1px solid #edf1f5;
+
+    border-left: 4px solid #f97066;
+
+    border-radius: 12px;
+
+    padding: 16px 18px;
+
+    color: #586579;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   DOCUMENT
+========================================= */
+
+.document-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 16px;
+
+    border-radius: 11px;
+
+    background: #0f1f33;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: .25s ease;
+}
+
+.document-btn:hover {
+    background: #1c3554;
+    transform: translateY(-1px);
+}
+
+.no-document {
+    margin: 0;
+    padding: 14px 16px;
+
+    background: #f8fafc;
+
+    border: 1px dashed #d9e0e8;
+
+    border-radius: 11px;
+
+    color: #8a94a4;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.admission-detail-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 24px;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8edf2;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 24px rgba(15, 31, 51, .05);
+}
+
+.admission-detail-actions form {
+    margin: 0;
+}
+
+.approve-btn,
+.reject-btn,
+.detail-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    padding: 11px 17px;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+
+/* APPROVE */
+
+.approve-btn {
+    background: #e8f8ef;
+    color: #168a4b;
+}
+
+.approve-btn:hover {
+    background: #168a4b;
+    color: #ffffff;
+}
+
+
+/* REJECT */
+
+.reject-btn {
+    background: #fff4e8;
+    color: #c87817;
+}
+
+.reject-btn:hover {
+    background: #c87817;
+    color: #ffffff;
+}
+
+
+/* DELETE */
+
+.detail-delete-btn {
+    background: #fff0ef;
+    color: #d64545;
+}
+
+.detail-delete-btn:hover {
+    background: #d64545;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .admission-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width-card {
+        grid-column: auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .admission-view-topbar {
+        flex-direction: column;
+    }
+
+    .status-summary-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail-list {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-item-full {
+        grid-column: auto;
+    }
+
+    .admission-detail-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .approve-btn,
+    .reject-btn,
+    .detail-delete-btn {
+        width: 100%;
+    }
+
+    .admission-detail-actions form {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   DELETE CONFIRMATION MODAL
+========================================= */
+
+.delete-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 31, 51, 0.62);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.25s ease;
+
+    z-index: 5000;
+}
+
+.delete-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* MODAL BOX */
+
+.delete-modal-box {
+    width: 100%;
+    max-width: 430px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 32px 28px;
+
+    text-align: center;
+
+    box-shadow: 0 25px 70px rgba(15, 31, 51, 0.24);
+
+    transform: translateY(18px) scale(0.96);
+
+    transition: 0.25s ease;
+}
+
+.delete-modal.show .delete-modal-box {
+    transform: translateY(0) scale(1);
+}
+
+
+/* WARNING ICON */
+
+.delete-modal-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0ef;
+    color: #d64545;
+
+    font-size: 28px;
+
+    box-shadow: 0 10px 25px rgba(214, 69, 69, 0.12);
+}
+
+
+/* HEADING */
+
+.delete-modal-box h3 {
+    margin: 0 0 10px;
+
+    color: #0f1f33;
+
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/* MESSAGE */
+
+.delete-modal-box p {
+    max-width: 340px;
+
+    margin: 0 auto 26px;
+
+    color: #7b8494;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ACTIONS */
+
+.delete-modal-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+/* COMMON BUTTON STYLE */
+
+.cancel-delete-btn,
+.confirm-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 120px;
+
+    padding: 12px 20px;
+
+    border-radius: 11px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+/* CANCEL BUTTON */
+
+.cancel-delete-btn {
+    border: 1px solid #e1e6ed;
+
+    background: #f7f8fa;
+    color: #4b5565;
+}
+
+.cancel-delete-btn:hover {
+    background: #e9edf2;
+    color: #263244;
+
+    transform: translateY(-1px);
+}
+
+
+/* CONFIRM DELETE BUTTON */
+
+.confirm-delete-btn {
+    border: 1px solid #d64545;
+
+    background: #d64545;
+    color: #ffffff;
+
+    box-shadow: 0 8px 20px rgba(214, 69, 69, 0.18);
+}
+
+.confirm-delete-btn:hover {
+    background: #bd3535;
+    border-color: #bd3535;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 10px 24px rgba(214, 69, 69, 0.25);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .delete-modal-box {
+        padding: 26px 20px;
+    }
+
+    .delete-modal-actions {
+        flex-direction: column;
+    }
+
+    .cancel-delete-btn,
+    .confirm-delete-btn {
+        width: 100%;
+    }
+}
+.admin-success-toast {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(100% - 30px);
+    max-width: 560px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    background: #ecfdf3;
+    border: 1px solid #b7e4c7;
+    border-radius: 14px;
+
+    box-shadow: 0 14px 35px rgba(22, 138, 75, 0.18);
+
+    z-index: 99999;
+
+    animation: adminSuccessToastIn 0.4s ease;
+}
+
+.admin-success-toast-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #d1fae5;
+    color: #15803d;
+
+    font-size: 18px;
+}
+
+.admin-success-toast-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.admin-success-toast-content strong {
+    color: #166534;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.admin-success-toast-content span {
+    color: #2f6b45;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.admin-success-toast-close {
+    border: none;
+    background: transparent;
+
+    color: #2f6b45;
+
+    font-size: 22px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.admin-success-toast.hide {
+    opacity: 0;
+    transform: translate(-50%, -18px);
+    pointer-events: none;
+    transition: 0.35s ease;
+}
+
+@keyframes adminSuccessToastIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+/* =========================================
+   PREMIUM ADMISSION ACTION BUTTONS
+========================================= */
+
+.admission-detail-actions {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    margin-top: 26px;
+}
+
+.admission-detail-actions form {
+    margin: 0;
+}
+
+.action-btn {
+    min-width: 190px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 16px;
+
+    border-radius: 16px;
+    border: 1px solid transparent;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease,
+        background 0.22s ease;
+
+    text-align: left;
+}
+
+.action-btn-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+}
+
+.action-btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.action-btn-text strong {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.action-btn-text small {
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.72;
+}
+
+
+/* APPROVE */
+
+.approve-btn {
+    background: #ecfdf3;
+    border-color: #c8efd7;
+    color: #137a43;
+}
+
+.approve-btn .action-btn-icon {
+    background: #d5f7e2;
+    color: #138447;
+}
+
+.approve-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    background: #e4faed;
+    border-color: #9fdfb8;
+
+    box-shadow: 0 10px 24px rgba(19, 132, 71, 0.15);
+}
+
+
+/* REJECT */
+
+.reject-btn {
+    background: #fff7ed;
+    border-color: #feddb7;
+    color: #c66a08;
+}
+
+.reject-btn .action-btn-icon {
+    background: #ffebd4;
+    color: #d16b00;
+}
+
+.reject-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    background: #fff1df;
+    border-color: #f8c98f;
+
+    box-shadow: 0 10px 24px rgba(209, 107, 0, 0.14);
+}
+
+
+/* DELETE */
+
+.detail-delete-btn {
+    background: #fff1f2;
+    border-color: #ffd1d5;
+    color: #cf3d47;
+}
+
+.detail-delete-btn .action-btn-icon {
+    background: #ffe0e3;
+    color: #db3540;
+}
+
+.detail-delete-btn:hover {
+    transform: translateY(-2px);
+
+    background: #ffe9eb;
+    border-color: #f8b8be;
+
+    box-shadow: 0 10px 24px rgba(219, 53, 64, 0.14);
+}
+
+
+/* DISABLED STATUS BUTTON */
+
+.action-btn-disabled {
+    cursor: not-allowed;
+
+    opacity: 0.62;
+
+    box-shadow: none !important;
+
+    transform: none !important;
+}
+
+.approve-btn.action-btn-disabled {
+    background: #eaf8ef;
+    border-color: #ccebd8;
+    color: #178148;
+}
+
+.reject-btn.action-btn-disabled {
+    background: #fff3e8;
+    border-color: #f4dac0;
+    color: #b96b1c;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .admission-detail-actions {
+        flex-direction: column;
+    }
+
+    .admission-detail-actions form,
+    .action-btn {
+        width: 100%;
+    }
+
+    .action-btn {
+        min-width: 0;
+    }
+}

@@ -1,0 +1,745 @@
+/* =========================================
+   STUDENTS PAGE
+========================================= */
+
+.admin-topbar {
+    margin-bottom: 24px;
+}
+
+.admin-topbar > div {
+    position: relative;
+    padding-left: 18px;
+}
+
+.admin-topbar > div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+
+    width: 4px;
+    height: 72px;
+
+    border-radius: 20px;
+
+    background: #f97066;
+}
+
+.page-label {
+    display: inline-block;
+
+    margin-bottom: 7px;
+
+    color: #f97066;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.admin-topbar h1 {
+    margin: 0;
+
+    color: #0f1f33;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.admin-topbar p {
+    margin-top: 8px;
+
+    color: #748094;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   STUDENTS CARD
+========================================= */
+
+.students-card {
+    background: #ffffff;
+
+    border: 1px solid #e8edf2;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow: 0 8px 28px rgba(15, 31, 51, 0.05);
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.student-search-form {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.student-search-box {
+    position: relative;
+
+    flex: 1;
+
+    max-width: 420px;
+}
+
+.student-search-box i {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #9aa4b2;
+
+    font-size: 13px;
+}
+
+.student-search-box input {
+    width: 100%;
+
+    padding: 12px 14px 12px 40px;
+
+    border: 1px solid #dfe5ec;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    color: #16263c;
+
+    background: #ffffff;
+
+    transition: 0.2s ease;
+}
+
+.student-search-box input:focus {
+    border-color: #f97066;
+
+    box-shadow: 0 0 0 3px rgba(249, 112, 102, 0.1);
+}
+
+.student-search-form button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #f97066;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.student-search-form button:hover {
+    background: #e75e55;
+}
+
+.clear-search-btn {
+    padding: 11px 15px;
+
+    border-radius: 10px;
+
+    background: #f1f4f7;
+
+    color: #5d6878;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 15px;
+}
+
+.students-table {
+        width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    min-width: 0;
+
+}
+
+.students-table thead {
+    background: #f7f9fc;
+}
+
+.students-table th {
+    padding: 14px 16px;
+
+    text-align: left;
+
+    color: #677386;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+    border-bottom: 1px solid #e8edf2;
+}
+
+.students-table td {
+    padding: 15px 16px;
+
+    color: #34445a;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.students-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.students-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.students-table tbody tr:hover {
+    background: #fff9f8;
+}
+
+
+/* =========================================
+   STUDENT INFO
+========================================= */
+
+.student-info {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.student-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #fff0ef;
+
+    color: #f97066;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.student-info strong {
+    display: block;
+
+    color: #16263c;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.student-info span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8b95a5;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   ROOM BADGE
+========================================= */
+
+.room-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 10px;
+
+    border-radius: 9px;
+
+    background: #eef3f8;
+
+    color: #35506d;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.student-status {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 11px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.status-active {
+    background: #e9f8ef;
+
+    color: #168a4b;
+}
+
+.status-archived {
+    background: #f1f3f6;
+
+    color: #6c7480;
+}
+
+.status-checked_out {
+    background: #fff1ef;
+
+    color: #c74747;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-students {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    color: #8a94a4;
+}
+
+.empty-students i {
+    display: block;
+
+    margin-bottom: 14px;
+
+    font-size: 34px;
+
+    color: #c5ccd6;
+}
+
+.empty-students h3 {
+    margin-bottom: 7px;
+
+    color: #35445a;
+
+    font-size: 17px;
+}
+
+.empty-students p {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.pagination-wrapper {
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .student-search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .student-search-box {
+        max-width: 100%;
+    }
+
+    .student-search-form button,
+    .clear-search-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+.student-delete-btn {
+    border: none;
+    background: #fff1f2;
+    color: #d13b46;
+    padding: 9px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition: 0.25s ease;
+}
+
+.student-delete-btn:hover {
+    background: #ffe2e5;
+    transform: translateY(-1px);
+}
+
+.student-success-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 13px 16px;
+    border-radius: 12px;
+    background: #ecfdf3;
+    border: 1px solid #c6efd7;
+    color: #147a43;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.student-success-alert i {
+    font-size: 17px;
+}
+/* ==============================
+   STUDENTS TABLE FINAL FIX
+================================ */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    min-width: 0;
+}
+
+.students-table th,
+.students-table td {
+    padding: 18px 16px;
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* ID */
+.students-table th:nth-child(1),
+.students-table td:nth-child(1) {
+    width: 70px;
+    text-align: center;
+}
+
+/* STUDENT */
+.students-table th:nth-child(2),
+.students-table td:nth-child(2) {
+    width: 260px;
+}
+
+/* CNIC */
+.students-table th:nth-child(3),
+.students-table td:nth-child(3) {
+    width: 190px;
+}
+
+/* PHONE */
+.students-table th:nth-child(4),
+.students-table td:nth-child(4) {
+    width: 180px;
+}
+
+/* ROOM */
+.students-table th:nth-child(5),
+.students-table td:nth-child(5) {
+    width: 130px;
+}
+
+/* STATUS */
+.students-table th:nth-child(6),
+.students-table td:nth-child(6) {
+    width: 120px;
+}
+
+/* ACTIONS */
+.students-table th:nth-child(7),
+.students-table td:nth-child(7) {
+    width: 130px;
+    text-align: center;
+}
+
+
+/* STUDENT INFO */
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.student-avatar {
+    flex-shrink: 0;
+}
+
+.student-info > div:last-child {
+    min-width: 0;
+}
+
+
+/* ACTION */
+
+.students-table td:last-child form {
+    margin: 0;
+    display: inline-block;
+}
+
+.student-delete-btn {
+    white-space: nowrap;
+}
+
+
+/* REMOVE UNNECESSARY SCROLL ON DESKTOP */
+
+@media (min-width: 1000px) {
+
+   .table-wrapper {
+        overflow-x: hidden;
+    }
+    .students-table {
+        width: 100%;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .table-wrapper {
+width: 100%;
+    overflow-x: auto;
+    border: 1px solid #edf0f4;
+    border-radius: 15px;    }
+
+    .students-table {
+        min-width: 950px;
+    }
+}
+/* =========================================
+   STUDENT DELETE MODAL - FINAL FIX
+========================================= */
+
+.student-delete-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(9, 24, 43, 0.62);
+    backdrop-filter: blur(6px);
+}
+
+.student-delete-overlay[hidden] {
+    display: none !important;
+}
+
+.student-delete-box {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #edf0f4;
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 30px 80px rgba(8, 25, 45, 0.30);
+}
+
+.student-delete-modal-icon {
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #fff0f1;
+    color: #d63f4a;
+
+    font-size: 23px;
+}
+
+.student-delete-modal-label {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #d63f4a;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+}
+
+.student-delete-box h2 {
+    margin: 0 0 10px;
+
+    color: #10233d;
+
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.student-delete-box > p {
+    margin: 0;
+
+    color: #6f7b8c;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.student-delete-note {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    padding: 14px;
+
+    border: 1px solid #f4dfba;
+    border-radius: 13px;
+
+    background: #fff9ef;
+    color: #90601e;
+
+    text-align: left;
+}
+
+.student-delete-note > i {
+    margin-top: 3px;
+}
+
+.student-delete-note div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.student-delete-note strong {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.student-delete-note span {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.student-delete-modal-actions {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+
+.student-modal-cancel,
+.student-modal-delete {
+    min-height: 44px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 11px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.student-modal-cancel {
+    background: #eef2f6;
+    color: #43546a;
+}
+
+.student-modal-delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    background: #dc414c;
+    color: #ffffff;
+}
